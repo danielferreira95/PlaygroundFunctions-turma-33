@@ -26,7 +26,7 @@ let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 let array2 = ['foguete', 'não', 'tem', 'ré'];
 let array3 = ['captain', 'my', 'captain'];
 function concatName(array){
-   return "'" + array[array.length-1] + ", " + array[0] + "'"
+   return ("'" + array[array.length-1] + ", " + array[0] + "'")
 };
 
 concatName(array);
