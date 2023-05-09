@@ -22,6 +22,18 @@ splitSentence('foguete');
 
 
 // Desafio 3 - Crie a função concatName
+let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+let array2 = ['foguete', 'não', 'tem', 'ré'];
+let array3 = ['captain', 'my', 'captain'];
+function concatName(array){
+   console.log("'" + array[array.length-1]+ ", " + array[0]  + "'")
+   return "'" + array[array.length-1] + ", " + array[0] + "'"
+};
+
+concatName(array);
+concatName(array2);
+concatName(array3);
+
 
 // Desafio 4 - Crie a função footballPoints
 
