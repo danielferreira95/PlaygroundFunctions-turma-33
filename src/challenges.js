@@ -26,7 +26,6 @@ let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 let array2 = ['foguete', 'não', 'tem', 'ré'];
 let array3 = ['captain', 'my', 'captain'];
 function concatName(array){
-   console.log("'" + array[array.length-1]+ ", " + array[0]  + "'")
    return "'" + array[array.length-1] + ", " + array[0] + "'"
 };
 
@@ -47,6 +46,8 @@ footballPoints(1, 2);
 footballPoints(0, 0);
 
 // Desafio 5 - Crie a função highestCount
+
+
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
