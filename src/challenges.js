@@ -13,6 +13,14 @@ compareTrue(elefante, macaco);
 
 // Desafio 2 - Crie a função splitSentence
 
+function splitSentence(string){
+    return string.split(' ');
+}
+splitSentence('go Trybe');
+splitSentence('vamo que vamo');
+splitSentence('foguete');
+
+
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
