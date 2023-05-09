@@ -26,7 +26,8 @@ let array1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 let array2 = ['foguete', 'não', 'tem', 'ré'];
 let array3 = ['captain', 'my', 'captain'];
 function concatName(paramet){
-   return ("'" + paramet[paramet.length-1] + ", " + paramet[0] + "'")
+    const concat = "'" + paramet[paramet.length-1] + ", " + paramet[0] + "'"
+   return concat
 };
 
 concatName(array1);
@@ -38,7 +39,6 @@ concatName(array3);
 
 function footballPoints(wins, ties){
   return wins*3+ties;
-
 }
 
 footballPoints(14, 8);
