@@ -9,16 +9,16 @@ const girafa = true;
 const elefante = true;
 const macaco = false;
 
-compareTrue(elefante, macaco);
+// compareTrue(elefante, macaco);
 
 // Desafio 2 - Crie a função splitSentence
 
 function splitSentence(string){
     return string.split(' ');
 }
-splitSentence('go Trybe');
-splitSentence('vamo que vamo');
-splitSentence('foguete');
+// splitSentence('go Trybe');
+// splitSentence('vamo que vamo');
+// splitSentence('foguete');
 
 
 // Desafio 3 - Crie a função concatName
@@ -30,9 +30,9 @@ function concatName(paramet){
    return concat
 };
 
-concatName(array1);
-concatName(array2);
-concatName(array3);
+// concatName(array1);
+// concatName(array2);
+// concatName(array3);
 
 
 // Desafio 4 - Crie a função footballPoints
@@ -41,14 +41,14 @@ function footballPoints(wins, ties){
   return wins*3+ties;
 }
 
-footballPoints(14, 8);
-footballPoints(1, 2);
-footballPoints(0, 0);
+// footballPoints(14, 8);
+// footballPoints(1, 2);
+// footballPoints(0, 0);
 
 // Desafio 5 - Crie a função highestCount
-let array1 = [9, 1, 2, 3, 9, 5, 7];
-let array2 = [0, 4, 4, 4, 9, 2, 1];
-let array3 = [0, 0, 0];
+// let array1 = [9, 1, 2, 3, 9, 5, 7];
+// let array2 = [0, 4, 4, 4, 9, 2, 1];
+// let array3 = [0, 0, 0];
 
 function highestCount(array) {
   let maior = 0;
@@ -59,7 +59,7 @@ function highestCount(array) {
     }
   } return maior;
 }  
-console.log(highestCount(array1));
+//console.log(highestCount(array1));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
@@ -77,14 +77,16 @@ function calcRectangleArea(base, height){
 };
 //calcRectangleArea(10, 50);
 
-function calcAllAreas(form, base, height){
+function calcAllAreas(base, height, form){
   if(form==='triângulo'){
     return 'O valor da área do triângulo é de: ' + calcTriangleArea(base, height);
-  }else if(form==='retângulo'){
-    return 'O valor da área do retângulo é de:' + calcRectangleArea(base, height);
-  } else{
-  return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'}
-};
+  }
+  if(form==='retângulo'){
+   return 'O valor da área do retângulo é de: ' + calcRectangleArea(base, height);
+  }
+  return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
+}
+
 
 
 
