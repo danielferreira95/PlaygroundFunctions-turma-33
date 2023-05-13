@@ -87,12 +87,70 @@ function calcAllAreas(base, height, form){
   return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
 }
 
-
-
-
-
-
 // Desafio 7 - Crie a função catAndMouse
+
+let catAndMouse = function (mouse, cat1, cat2){
+  if(Math.abs(cat1-mouse)===Math.abs(cat2-mouse)){
+    return 'os gatos trombam e o rato foge';
+  }else if(Math.abs(cat1-mouse)>Math.abs(cat2-mouse)){
+    return 'cat2';
+  }else if(Math.abs(cat1-mouse)<Math.abs(cat2-mouse)){
+    return 'cat1';
+  }
+};
+// let catAndMouse = function(mouse, cat1, cat2) {
+// if(cat1-mouse>0 && cat2-mouse>0){
+//   if(cat1-mouse>cat2-mouse){
+//     console.log('cat2');
+//     return 'cat2';
+//   }
+//   else if(cat2-mouse>cat1-mouse){
+//     console.log('cat1');
+//     return 'cat1';
+//   }else if(cat1-mouse===cat2-mouse){
+//     console.log('os gatos trombam e o rato foge');
+//     return 'os gatos trombam e o rato foge';
+//   }
+// }else if(cat1-mouse<0 && cat2-mouse<0){
+//   if(cat1-mouse>cat2-mouse){
+//     console.log('cat1');
+//     return 'cat1';
+//   }else if(cat2-mouse>cat1-mouse){
+//     console.log('cat2');
+//     return 'cat2';
+//   }else if(cat1-mouse===cat2-mouse){
+//     console.log('os gatos trombam e o rato foge');
+//     return 'os gatos trombam e o rato foge';
+//   }
+// }else if(cat1-mouse<0 && cat2-mouse>0){
+// if(cat1-mouse-0<cat2-mouse-0){
+// console.log('cat1');
+// return 'cat1';
+// }else if(cat1-mouse-0>cat2-mouse-0){
+// console.log('cat2');
+// return 'cat2';
+// }else if(cat1-mouse-0===cat2-mouse-0){
+//   console.log('os gatos trombam e o rato foge');
+//   return 'os gatos trombam e o rato foge';
+// }
+// }else if(cat1-mouse>0 && cat2-mouse<0){
+//   if(cat1-mouse-0<cat2-mouse-0){
+//     console.log('cat2');
+//     return 'cat2';
+//   }else if(cat1-mouse-0>cat2-mouse-0){
+//     console.log('cat1');
+//     return 'cat1';
+//   }else if(cat1-mouse-0===cat2-mouse-0){
+//     console.log('os gatos trombam e o rato foge');
+//     return 'os gatos trombam e o rato foge';
+//   }
+// }if else(cat1===0 && cat2===0 && mouse===0){
+//   console.log('os gatos trombam e o rato foge');
+//   return 'os gatos trombam e o rato foge';
+// }
+// };
+// catAndMouse(0, 1, 2);
+
 
 // Desafio 8 - Crie a função fizzBuzz
 
