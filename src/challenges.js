@@ -178,16 +178,37 @@ let fizzBuzz = function(conjunt){
       conjunt.splice(i, 1, 'fizzBuzz');
     }else{conjunt.splice(i, 1, 'bug!' );
     }
-  }console.log(conjunt);
-  return conjunt;
+  }return conjunt;
 };
 
 // fizzBuzz([2, 15, 7, 9, 45]);
 // fizzBuzz([7, 9]);
 // fizzBuzz([9, 25]);
-// Expected output: "Fire-Air-Water"
+
 
 // Desafio 9 - Crie a função encode e a função decode
+
+// let word = 'hi, there!'
+// console.log(word.splice(1, 1, 2));
+// console.log(word[0]);
+// let encode = function(palavra){
+// for(i=0; i<palavra.length; i+=1){
+//   if(palavra[i]=== a){
+//     palavra.splice(i, 1, 1);
+//   }else if(palavra[i]=== e){
+//     palavra.splice(i, 1, 2);
+//   }else if(palavra[i]=== i){
+//     palavra.splice(i, 1, 3);
+//   }else if(palavra[i]=== o){
+//     palavra.splice(i, 1, 4);
+//   }else if(palavra[i]=== u){
+//     palavra.splice(i, 1, 5);
+//   }else{palavra[i];}
+// }console.log(palavra);
+// };
+
+// encode('hi, there');
+
 
 // Desafio 10 - Crie a função techList
 
