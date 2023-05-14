@@ -154,6 +154,20 @@ let catAndMouse = function (mouse, cat1, cat2){
 
 // Desafio 8 - Crie a função fizzBuzz
 
+// let fizzBuzz = function(conjunt){
+//   let arrai = [];
+//   for(let i=0; i<conjunt.length; i+=1){
+//     if(conjunt[i]%3===0 && conjunt[i]%5!==0){
+//       arrai.push('fizz');
+//     }else if(conjunt[i]%5===0 && conjunt[i]%3!==0){
+//       arrai.push('buzz');
+//     }else if(conjunt[i]%5===0 && conjunt[i]%3===0){
+//       arrai.push('fizzBuzz');
+//     }else{arrai.push('bug!');}
+//   }console.log(arrai);
+//   return arrai;
+// };
+
 let fizzBuzz = function(conjunt){
   for(let i=0; i<conjunt.length; i+=1){
     if(conjunt[i]%3===0 && conjunt[i]%5!==0){
@@ -162,12 +176,15 @@ let fizzBuzz = function(conjunt){
       conjunt.splice(i, 1, 'buzz');
     }else if(conjunt[i]%5===0 && conjunt[i]%3===0){
       conjunt.splice(i, 1, 'fizzBuzz');
-    }else{conjunt.splice(i, 1, 'bug!');
+    }else{conjunt.splice(i, 1, 'bug!' );
     }
   }console.log(conjunt);
+  return conjunt;
 };
-fizzBuzz([9, 25])
 
+// fizzBuzz([2, 15, 7, 9, 45]);
+// fizzBuzz([7, 9]);
+// fizzBuzz([9, 25]);
 // Expected output: "Fire-Air-Water"
 
 // Desafio 9 - Crie a função encode e a função decode
