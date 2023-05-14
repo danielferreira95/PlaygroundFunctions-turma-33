@@ -154,6 +154,22 @@ let catAndMouse = function (mouse, cat1, cat2){
 
 // Desafio 8 - Crie a função fizzBuzz
 
+let fizzBuzz = function(conjunt){
+  for(let i=0; i<conjunt.length; i+=1){
+    if(conjunt[i]%3===0 && conjunt[i]%5!==0){
+      conjunt.splice(i, 1, 'fizz');
+    }else if(conjunt[i]%5===0 && conjunt[i]%3!==0){
+      conjunt.splice(i, 1, 'buzz');
+    }else if(conjunt[i]%5===0 && conjunt[i]%3===0){
+      conjunt.splice(i, 1, 'fizzBuzz');
+    }else{conjunt.splice(i, 1, 'bug!');
+    }
+  }console.log(conjunt);
+};
+fizzBuzz([9, 25])
+
+// Expected output: "Fire-Air-Water"
+
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
