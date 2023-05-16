@@ -135,6 +135,16 @@ let fizzBuzz = function(conjunt){
 
 // Desafio 9 - Crie a função encode e a função decode
 
+let encode = function(t){
+  let p = t.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 4).replace(/u/gi, 5);
+   return p
+};
+
+
+let decode = function(m){
+  let b = m.replace(/1/gi, 'a').replace(/2/gi, 'e').replace(/3/gi, 'i').replace(/4/gi, 'o').replace(/5/gi, 'u');
+  return b
+};
 
 
 // Desafio 10 - Crie a função techList
