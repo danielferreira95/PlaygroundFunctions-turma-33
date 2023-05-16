@@ -46,20 +46,19 @@ function footballPoints(wins, ties){
 // footballPoints(0, 0);
 
 // Desafio 5 - Crie a função highestCount
-// let array1 = [9, 1, 2, 3, 9, 5, 7];
-// let array2 = [0, 4, 4, 4, 9, 2, 1];
-// let array3 = [0, 0, 0];
 
-function highestCount(array) {
-  let maior = 0;
-  for(let index = 0; index<array.length; index+=1){
 
-    if(array[index]>maior){
-      maior=array[index];
-    }
-  } return maior;
-}  
-//console.log(highestCount(array1));
+let highestCount = function (p) {
+  let m = Math.max(...p);
+  let n = 0;
+  for(let i = 0; i<p.length; i+=1){
+      if(p[i] === m){
+      n = n+1;
+      }
+  }return n;
+};
+
+
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
@@ -98,58 +97,6 @@ let catAndMouse = function (mouse, cat1, cat2){
     return 'cat1';
   }
 };
-// let catAndMouse = function(mouse, cat1, cat2) {
-// if(cat1-mouse>0 && cat2-mouse>0){
-//   if(cat1-mouse>cat2-mouse){
-//     console.log('cat2');
-//     return 'cat2';
-//   }
-//   else if(cat2-mouse>cat1-mouse){
-//     console.log('cat1');
-//     return 'cat1';
-//   }else if(cat1-mouse===cat2-mouse){
-//     console.log('os gatos trombam e o rato foge');
-//     return 'os gatos trombam e o rato foge';
-//   }
-// }else if(cat1-mouse<0 && cat2-mouse<0){
-//   if(cat1-mouse>cat2-mouse){
-//     console.log('cat1');
-//     return 'cat1';
-//   }else if(cat2-mouse>cat1-mouse){
-//     console.log('cat2');
-//     return 'cat2';
-//   }else if(cat1-mouse===cat2-mouse){
-//     console.log('os gatos trombam e o rato foge');
-//     return 'os gatos trombam e o rato foge';
-//   }
-// }else if(cat1-mouse<0 && cat2-mouse>0){
-// if(cat1-mouse-0<cat2-mouse-0){
-// console.log('cat1');
-// return 'cat1';
-// }else if(cat1-mouse-0>cat2-mouse-0){
-// console.log('cat2');
-// return 'cat2';
-// }else if(cat1-mouse-0===cat2-mouse-0){
-//   console.log('os gatos trombam e o rato foge');
-//   return 'os gatos trombam e o rato foge';
-// }
-// }else if(cat1-mouse>0 && cat2-mouse<0){
-//   if(cat1-mouse-0<cat2-mouse-0){
-//     console.log('cat2');
-//     return 'cat2';
-//   }else if(cat1-mouse-0>cat2-mouse-0){
-//     console.log('cat1');
-//     return 'cat1';
-//   }else if(cat1-mouse-0===cat2-mouse-0){
-//     console.log('os gatos trombam e o rato foge');
-//     return 'os gatos trombam e o rato foge';
-//   }
-// }if else(cat1===0 && cat2===0 && mouse===0){
-//   console.log('os gatos trombam e o rato foge');
-//   return 'os gatos trombam e o rato foge';
-// }
-// };
-// catAndMouse(0, 1, 2);
 
 
 // Desafio 8 - Crie a função fizzBuzz
@@ -188,29 +135,11 @@ let fizzBuzz = function(conjunt){
 
 // Desafio 9 - Crie a função encode e a função decode
 
-// let word = 'hi, there!'
-// console.log(word.splice(1, 1, 2));
-// console.log(word[0]);
-// let encode = function(palavra){
-// for(i=0; i<palavra.length; i+=1){
-//   if(palavra[i]=== a){
-//     palavra.splice(i, 1, 1);
-//   }else if(palavra[i]=== e){
-//     palavra.splice(i, 1, 2);
-//   }else if(palavra[i]=== i){
-//     palavra.splice(i, 1, 3);
-//   }else if(palavra[i]=== o){
-//     palavra.splice(i, 1, 4);
-//   }else if(palavra[i]=== u){
-//     palavra.splice(i, 1, 5);
-//   }else{palavra[i];}
-// }console.log(palavra);
-// };
-
-// encode('hi, there');
 
 
 // Desafio 10 - Crie a função techList
+
+
 
 // Não modifique essas linhas
 module.exports = {
